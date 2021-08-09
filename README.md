@@ -1,68 +1,83 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<h2 align="center">FutureEatsB</h2>
+<hr/>
 
-## Available Scripts
 
-In the project directory, you can run:
+## ⚙️ Tecnologias Usadas:
+- CSS3
+- JavaScript 
+- React Js 
+- React Hooks
+- Styled Components
+- Material UI
+- React Router
+- Axios
 
-### `npm start`
+## ⚙️ Estrutura do Projeto
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+- Arquivo `.gitignore`
+- Arquivo `package.json`
+- Arquivo `package-lock.json`
+- Pasta `node_modules`: Armazena os pacotes das dependências que definimos no arquivo package.json. Também deve ser observado que este diretório é definido dentro de .gitignore para que todas as dependências infinitas não sejam carregadas para o repositório Git. Portanto, quem baixar o projeto instalará as dependências [diretamente da web](https://www.npmjs.com/)
+- Pasta `public`: Ele contém os arquivos estáticos que nos permitirão montar o aplicativo. Dentro dele está a pasta que contém as imagens dos produtos da loja.
+- Pasta `src` (source): A pasta src é a pasta onde nosso código React está localizado.
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+## ⚙️ Explicação da Aplicação
 
-### `npm test`
+O aplicativo possui :
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- Arquivo App.js:
+O arquivo do App, cuja componente é pai de todos, onde importamos o React, o encarregado de desenhar as interfaces.
 
-### `npm run build`
+- Foram utilizados hooks para proteger as páginas cujo acesso é permitido apenas a usuários cadastrados, e encaminhá-los para a página de login/cadastro quando for o caso.
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- As requisições de cada endpoint compõem requests.js, presente na pasta services.
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+- O conjunto de endpoints da API nomeiam as pastas que integram a pasta pages. 
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- As componentes Footer e Header permitem navegar pelas páginas de acordo com a ação desejada: Profile, Home, Carrinho, Login, Logout.
 
-### `npm run eject`
+- A pasta contants contém as componentes referentes às cores, o tema e a url de base.
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+-O fluxo entre as páginas está indicado na figura a seguir:
+![](futureeatsbfluxo.jpg)
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+##  Instalação
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
 
-## Learn More
+## 🏁 Para rodar o projeto:
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Clone este repositório em sua máquina:
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+```bash
+$ git clone https://github.com/future4code/munoz-futureEatsB.git
+```
 
-### Code Splitting
+cd `futureEatsB` e rode:
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
+```bash
+npm install
+```
 
-### Analyzing the Bundle Size
+para iniciar:
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
+```bash
+npm run start
+```
 
-### Making a Progressive Web App
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
+<br/>
 
-### Advanced Configuration
+##  Conclusão
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
+As funções de login, cadastro, logout rodam de acordo com o solicitado. As páginas para profile, add adress, place order. get restaurants foram criadas, bem como a navegação entre estas utilizando o Header e o Footer, porém precisam de ajustes no fluxo de informações.
 
-### Deployment
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
+Atenciosamente,
 
-### `npm run build` fails to minify
+Jeane Melo.
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+
+P.D. Um protótipo deste aplicativo (MVP - Produto Mínimo Viável) pode ser visto no seguinte endereço:
+
+http://.surge.sh/

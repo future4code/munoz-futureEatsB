@@ -80,4 +80,4 @@ Jeane Melo.
 
 P.D. Um protótipo deste aplicativo (MVP - Produto Mínimo Viável) pode ser visto no seguinte endereço:
 
-http://.surge.sh/
+parched-company.surge.sh

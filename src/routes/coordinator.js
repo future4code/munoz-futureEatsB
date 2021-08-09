@@ -1,19 +1,28 @@
+
 export const goToLoginPage = (history) => {
-    history.push(/login)
+    history.push("/login")
 }
 
 export const goToSignupPage = (history) => {
-    history.push(/cadastro)
+    history.push("/cadastro")
+}
+
+export const goToAddAdressPage = (history) => {
+    history.push("/endereco")
 }
 
 export const goToGetRestaurantsPage = (history) => {
-    history.push(/)
+    history.push("/")
 }
 
 export const goToGetRestaurantDetailsPage = (history, id) => {
     history.push(`/detalhes/${id}`)
 }
 
-export const goToAddRestaurantPage = (history) => {
-    history.push(/adicionar)
+export const goToPlaceOrderPage = (history) => {
+    history.push("/carrinho")
+}
+
+export const goToGetProfilePage = (history) => {
+    history.push("/perfil")
 }

@@ -1,10 +1,18 @@
-import React from "react"
+import React from 'react'
+import logo from "../../assets/logo-future-eats-invert.png"
+import { ScreenContainer } from './styled'
+import AddAdressPageForm from './AddAdressPageForm'
+import { LogoImage } from './styled'
+import useUnprotectedPage from '../../hooks/useUnprotectedPage'
 
-const AddAdressPage = () => {
-    return (
-        <div>
-            <h1>AddAdressPage</h1>
-        </div>
-    )
+const SignupPage = ({setRightButtonText}) => {
+    useUnprotectedPage()
+   return (
+    <ScreenContainer>
+      <LogoImage src={logo}/>
+      <AddAdressPageForm setRightButtonText={setRightButtonText}/>
+    </ScreenContainer>
+  )
 }
-export default AddAdressPage
+
+export default SignupPage
